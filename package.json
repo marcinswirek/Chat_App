@@ -1,0 +1,26 @@
+{
+  "name": "czat",
+  "version": "1.0.0",
+  "description": "czat_app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swirek-marcin/Czat.git"
+  },
+  "keywords": [
+    "czat"
+  ],
+  "author": "Marcin Świrek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swirek-marcin/Czat/issues"
+  },
+  "homepage": "https://github.com/swirek-marcin/Czat#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
