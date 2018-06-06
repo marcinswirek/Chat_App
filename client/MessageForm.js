@@ -7,6 +7,10 @@ class MessageForm extends Component {
     this.state = { text: "" };
   }
 
+  changeHandler(e) {
+    this.setState({ text: e.target.value });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const message = {
