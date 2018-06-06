@@ -9,7 +9,7 @@ console.log("NODE_ENV: ", env);
 
 var plugins = [
   new HtmlWebpackPlugin({
-    template: "src/index.html",
+    template: "client/index.html",
     filename: "index.html",
     inject: "body"
   })
