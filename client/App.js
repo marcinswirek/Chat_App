@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   messageReceive(message) {
-    const message = [message, ...this.state.messages];
+    const messages = [message, ...this.state.messages];
     this.setState({ messages });
   }
 
