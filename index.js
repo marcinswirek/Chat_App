@@ -25,7 +25,7 @@ io.on("connection", function(socket) {
     });
     // App emits update event, which is updating info about users list to anyone who is listening to an 'update' event
     io.emit("update", {
-      user: userService.getAllUsers()
+      users: userService.getAllUsers()
     });
   });
 });

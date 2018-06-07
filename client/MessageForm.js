@@ -7,10 +7,6 @@ class MessageForm extends Component {
     this.state = { text: "" };
   }
 
-  changeHandler(e) {
-    this.setState({ text: e.target.value });
-  }
-
   handleSubmit(e) {
     e.preventDefault();
     const message = {
@@ -21,12 +17,13 @@ class MessageForm extends Component {
     this.setState({ text: "" });
   }
 
+  changeHandler(e) {
+    this.setState({ text: e.target.value });
+  }
+
   render() {
     return (
-      <form
-        className={styles.MessageForm}
-        onSubmit={e => this.handleOnSubmit(e)}
-      >
+      <form className={styles.MessageForm} onSubmit={e => this.handleSubmit(e)}>
         <input
           className={styles.MessageInput}
           onChange={e => this.changeHandler(e)}
